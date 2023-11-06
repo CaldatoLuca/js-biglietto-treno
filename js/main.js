@@ -18,9 +18,23 @@ const discountPrice = price - (price * discount) / 100;
 if (age < 18) {
   discount = 20;
   const discountPrice = price - (price * discount) / 100;
-  console.log("Il prezzo del biglietto è: " + discountPrice);
+  console.log(
+    "Il prezzo del biglietto è: " +
+      discountPrice +
+      " - applicato lo sconto 20% per minorenni"
+  );
 } else if (age > 65) {
   discount = 40;
   const discountPrice = price - (price * discount) / 100;
-  console.log("Il prezzo del biglietto è: " + discountPrice);
+  console.log(
+    "Il prezzo del biglietto è: " +
+      discountPrice +
+      " - applicato lo sconto 40% per anziani"
+  );
+} else {
+  console.log(
+    "Il prezzo del biglietto è: " +
+      discountPrice +
+      " - nessuna scontistica applicata"
+  );
 }
